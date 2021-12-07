@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CrabsService } from './services/crabs.service';
 import { DiagnosticService } from './services/diagnostic.service';
 import { DiveService } from './services/dive.service';
 import { LanternService } from './services/latern.service';
@@ -10,7 +11,7 @@ import { LanternService } from './services/latern.service';
 })
 
 export class SubmarineComponent implements OnInit {
-  constructor(private _ls: LanternService) { }
+  constructor(private _cs: CrabsService) { }
 
   public click(): void {
     // this._bs.nextInput();
@@ -35,13 +36,13 @@ export class SubmarineComponent implements OnInit {
   //   this._hts.printResult();
   // }
 
-  private latern(): void {
-    this._ls.execute();
-  }
+  // private latern(): void {
+  //   this._ls.execute();
+  // }
 
   ngOnInit() {
     // this.hydro();
-    this.latern();
+    // this.latern();
     // this.doBingo();
     // this.doDive();
     // this.doDiagnostics();
