@@ -3,6 +3,7 @@ import { CrabsService } from './services/crabs.service';
 import { DiagnosticService } from './services/diagnostic.service';
 import { DiveService } from './services/dive.service';
 import { LanternService } from './services/latern.service';
+import { SegmentService } from './services/segment.service';
 
 @Component({
   selector: 'app-submarine',
@@ -11,7 +12,7 @@ import { LanternService } from './services/latern.service';
 })
 
 export class SubmarineComponent implements OnInit {
-  constructor(private _cs: CrabsService) { }
+  constructor(private _ss: SegmentService) { }
 
   public click(): void {
     // this._bs.nextInput();
